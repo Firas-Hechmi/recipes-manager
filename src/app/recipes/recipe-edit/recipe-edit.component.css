@@ -1,0 +1,33 @@
+.row{
+    margin-bottom: 20px;
+}
+p{
+    margin-bottom: 5px;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin-top:5px
+}
+button{
+    padding: 7px;
+    font-weight: bold;
+    margin-right: 5px;
+    color: white;
+}
+textarea{
+    width:60%;
+    height: 100px;
+}
+input{
+    height: 25px;
+}
+.row input{
+    width: 60%;
+}
+.ingredient-name{
+    width: 30%;
+}
+.row-2 input{
+    margin-right: 18px;
+}

@@ -1,0 +1,7 @@
+<p>
+    <a routerLink='new'>new recipe</a>
+</p>
+<app-recipe-item 
+*ngFor="let recipe of recipes" 
+[recipe]="recipe"
+></app-recipe-item>

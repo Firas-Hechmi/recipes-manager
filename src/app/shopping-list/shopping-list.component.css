@@ -1,0 +1,52 @@
+.container{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(78, 67, 38);
+    border-radius: 5px;
+    width: 480px;
+ 
+}
+
+td{
+    padding: 5px;
+    font-weight: bold;
+}
+button{
+    padding: 4px;
+    font-weight: bold;
+    margin-right: 15px;
+    width: 90px;
+    color: white;
+}
+.buttons{
+    margin:5px auto;
+    width:66%;
+}
+.list{
+    margin-top: 20px;
+}
+.title{
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    color: white ;
+    background: rgb(78, 67, 38);
+    border-radius:5px 5px 0px 0px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ingredients-element{
+    width: 400px;
+    padding: 8px;
+    margin-top: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid rgb(78, 67, 38);
+    font-size: 16px;
+}
+.ingredients-element:hover{
+    background-color: rgb(78, 67, 38);
+    color: darkgoldenrod;
+    font-weight: bold;
+}

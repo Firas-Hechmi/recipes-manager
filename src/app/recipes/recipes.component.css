@@ -1,0 +1,14 @@
+div{
+    display: inline-block;
+    vertical-align: top;
+}
+.recipe-detail,.recipe-list{
+    width:50%;
+}
+
+.container{
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 100px;
+    width: 100%;
+}

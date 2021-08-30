@@ -1,0 +1,79 @@
+.recipe-header{
+    height: 210px;
+    width: 450px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+select{
+    background-color:rgb(72, 72, 245);
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    
+    
+}
+.recipe-text{
+    display: inline-block;
+    margin-left: 40px;
+    color: darkgoldenrod;
+}
+h2{
+    font-family: cursive;
+}
+p{
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(78, 67, 38);
+
+}
+ul{
+    list-style-type:none;
+}
+.sous {
+    display: none;
+
+}
+
+li button{
+    background-color: #006DB5;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-bottom: 3px solid #002966;
+    margin: 0px;
+    font-weight: bold;
+}
+ul li:hover .sous{
+    display: block;
+}
+img{
+    height: 210px;
+    width: 210px;
+
+    float: left;
+}
+
+.ingredients-title{
+    text-align: center;
+    width: 400px;
+    padding: 10px;
+    color: white ;
+    background: rgb(78, 67, 38);
+    border-radius:5px 5px 0px 0px ;
+}
+.ingredients-element{
+    width: 400px;
+    padding: 8px;
+    margin-top: 2px;
+    border:2px solid rgb(78, 67, 38);
+    font-size: 16px;
+}
+.ingredients-element:hover{
+    background-color: rgb(78, 67, 38);
+    color: darkgoldenrod;
+    font-weight: bold;
+}

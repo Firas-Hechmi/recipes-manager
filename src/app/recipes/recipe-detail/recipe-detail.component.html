@@ -1,0 +1,27 @@
+<div class="recipe-header">
+    <img [src]="recipe.image">
+    <div class="recipe-text">
+        <h2>{{recipe.name}}</h2>
+        <p>{{recipe.description}}</p>
+        <ul class="deroulant">
+            <li><button>Manage</button>
+                <ul class="sous">
+                    <li><button (click)="onToShoppingList()">To shopping list</button></li>
+                    <li><button (click)="onEditRecipe()">Edit recipe</button></li>
+                    <li><button (click)="onDeleteRecipe(recipe.id)">Delete recipe</button></li>
+                </ul>
+            </li>
+        </ul>
+    
+        
+    </div>
+</div>
+<div class="ingredients">
+    <div class="ingredients-title">
+        ingredients
+    </div>
+    <div *ngFor="let ingredient of recipe.ingredients" 
+    class="ingredients-element">
+        {{ingredient.name}} : {{ingredient.amount}} 
+    </div>
+</div>

@@ -1,0 +1,30 @@
+
+<form [formGroup]="recipeForm" (ngSubmit)="onSubmitForm()">
+    <div class="row">
+        <button type="submit" [disabled]="recipeForm.invalid" style="background-color: green;">Save</button>
+       
+      <button style="background-color: crimson;" (click)="onCancel()">Cancel</button>
+    </div>
+    <div class="row">
+        <p>Name</p>
+        <input type="text" formControlName="name">
+    </div>
+    <div class="row">
+        <p>Image url</p>
+        <input type="text" formControlName="image">
+        <br>
+    </div>
+    <div class="row">
+        <p>Description</p>
+        <textarea formControlName="description"></textarea>
+    </div>
+    <p>Ingredients</p>
+    <div formArrayName="ingredients">
+    <div class="row-2" *ngFor="let ingredientControl of getIngredients().controls; let i=index" [formGroupName]="i">
+        <input type="text" class="ingredient-name" formControlName="name">
+        <input type="number"  class="ingredient-amount" formControlName="amount">
+        <button (click)="onDeleteIngredient(i)" style="background-color: crimson;">X</button>
+    </div>
+    </div>
+    <button type="button" style="background-color:green;margin-top: 10px" (click)="onAddIngredient()">Add ingredient</button>
+    </form>

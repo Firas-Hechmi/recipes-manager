@@ -1,0 +1,12 @@
+a{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 20px;
+}

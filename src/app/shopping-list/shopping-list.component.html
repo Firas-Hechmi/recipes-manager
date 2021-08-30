@@ -1,0 +1,37 @@
+<form [formGroup]="ingredientForm" (ngSubmit)="onSubmitForm()">
+  <div class="container">
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Amount</td>
+            <td>Recipe</td>
+        </tr>
+        <tr>
+            <td><input type="text" formControlName="name"></td>
+            <td><input  type="number" formControlName="amount"></td>
+            <td><select formControlName="recipe">
+                  <option value="Pizza">Pizza</option>
+                  <option value="Burger">Burger</option>
+                </select>
+           </td>
+        </tr>
+    </table>
+    <div class="buttons">
+      <button type="submit" *ngIf="edit" style="background-color: green;" [disabled]="ingredientForm.invalid">Update</button>
+        <button type="submit" *ngIf="!edit" style="background-color: green;" [disabled]="ingredientForm.invalid">Add</button>
+        <button type="button" (click)="onDelete()" [disabled]="!edit" style="background-color: crimson;">Delete</button>
+        <button type="button"(click)="onClear()" style="background-color: dodgerblue;">Clear</button>
+    </div>
+    </div>
+</form>
+<div class="list">
+    <div class="title">
+      Shopping list
+    </div>
+    <div  
+    class="ingredients-element" *ngFor="let ingredient of shoppingList ; let i=index ;" (click)="setIndex(i)">
+    {{ingredient.amount}} of {{ingredient.name}} for {{ingredient.recipe}}
+        
+         
+    </div>
+</div>

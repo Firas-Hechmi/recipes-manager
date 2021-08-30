@@ -1,0 +1,36 @@
+.item{
+    height: 70px;
+    width: 400px;
+    border: 2px solid darkgoldenrod;
+    border-radius: 4px;
+    margin: 2px;
+    padding: 10px;
+}
+a{
+    color: rgb(78, 67, 38);
+}
+.item:hover{
+    background-color: goldenrod;
+    color: white;
+    border: 3px solid rgb(78, 67, 38);
+}
+.item-text{
+    display: inline-block;
+    width: 80%;
+}
+h2{
+    font-family: cursive;
+}
+p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+
+    float: right;
+}
